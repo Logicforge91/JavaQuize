@@ -1,11 +1,13 @@
-public class Main{
+public class Main {
 
-  public  static void main(String[] args){
+    public static void main(String[] args) {
+        // Create the quiz service
+        QuestionService quizService = new QuestionService();
 
-    QuestionService service = new QuestionService();
-    service.playQuize();
-    service.printScore();
+        // Start the quiz
+        quizService.playQuiz();
 
-    
-  }
+        // Print final score
+        quizService.printScore();
+    }
 }
